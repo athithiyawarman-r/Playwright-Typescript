@@ -5,8 +5,8 @@ import { defineConfig, devices } from '@playwright/test';
  * https://github.com/motdotla/dotenv
  */
 // import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
+// // import path from 'path';
+// dotenv.config({path:`Data/qa.env`});
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -28,6 +28,7 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
+    testIdAttribute:"data-testid",
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',

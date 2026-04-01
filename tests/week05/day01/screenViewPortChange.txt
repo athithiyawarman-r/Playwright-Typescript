@@ -1,0 +1,30 @@
+Maximize Screen size in chromium : 
+--------------------------------
+
+
+{
+name: 'chromium',
+use: { browserName:"chromium", 
+viewport:null, // disable the deafult 1280x720
+launchOptions:{
+args:['--start-maximized'],
+},
+},
+}, 
+
+
+
+
+Maximize Screen size in firefox : 
+--------------------------------
+
+
+{
+name: 'firefox',
+use: { browserName:"firefox", 
+viewport:{ width: 1920, height: 1080 }, // disable the deafult 1280x720
+launchOptions:{
+args:['--start-maximized'],
+}
+}
+}
